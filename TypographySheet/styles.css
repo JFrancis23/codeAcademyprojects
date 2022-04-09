@@ -1,0 +1,68 @@
+h1 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(48, 98, 167);
+  text-align: center;
+}
+th {
+  color: rgb(26, 29, 54);
+  font-family: monospace;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+table {
+  border: 1px solid black;
+  align-self: center;
+  background-color: rgb(220, 235, 240);
+}
+td {
+  border: 1px solid grey;
+  padding: 10px;
+}
+td:nth-child(1) {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Style for font family:
+note the 3rd element is to account for the <br> tag*/
+#font-family td span:nth-child(1) {
+  font-family: "Courier New";
+}
+#font-family td span:nth-child(3) {
+  font-family: Arial;
+}
+
+/*Style for type of script:
+note the 3rd element is to account for the <br> tag
+*/
+#sansSerif td span:nth-child(1) {
+  font-family: serif;
+}
+#sansSerif td span:nth-child(3) {
+  font-family: sans-serif;
+}
+#sansSerif td span:nth-child(4) {
+  font-family: monospace;
+}
+
+/*Style for font-weighting:
+note the nth element is to account for the <br> tag
+*/
+#fontWeight td:nth-child(3) {
+  font-family: "Roberto Mono", monospace;
+}
+#fontWeight td span:nth-child(1) {
+  font-weight: 100;
+  /* color: violet; */
+}
+#fontWeight td span:nth-child(3) {
+  font-weight: 500;
+  /* color: red; */
+}
+#fontWeight td span:nth-child(5) {
+  font-weight: 700;
+  /* color: orange; */
+}
